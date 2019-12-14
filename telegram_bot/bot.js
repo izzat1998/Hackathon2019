@@ -1,6 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const request = require('request');
-const https = require('https');
+const _ = require('lodash');
+const fs =  require('fs');
 
 const token = '1010037217:AAGKVM_4daQjBvfTUbJyIILRhSw48fGOZxM';
  
@@ -9,7 +10,8 @@ const bot = new TelegramBot(token, {polling: true});
 
 var userAuthorized = {};
 var temporaryUser = {};
-var complaint = {};
+var postComplaint = {};
+
 
 bot.onText(/\/start/, (msg, match) => {
     bot.sendMessage(msg.chat.id, 
@@ -59,32 +61,118 @@ bot.onText(/\/start/, (msg, match) => {
                                     bot.onReplyToMessage(msg.chat.id, item.message_id, (msg)=>{
                                         if(msg.photo) {
                                             bot.getFile(msg.photo[2].file_id).then((file)=>{
-                                                complaint.image = `https://api.telegram.org/file/bot${token}/${file.file_path}`
-                                                console.log(complaint.image);
+                                                postComplaint.image = `https://api.telegram.org/file/bot${token}/${file.file_path}`
+                                                console.log(postComplaint.image);
                                                 bot.sendMessage(msg.chat.id, 
                                                     'Choose category: ',
                                                     {reply_markup: {
                                                         inline_keyboard: [
                                                             [{
-                                                                
+                                                                text: 'Roads',
+                                                                callback_data: 'Roads'
+                                                            }, {
+                                                                text: 'Pollution',
+                                                                callback_data: 'Polution'
+                                                            }, {
+                                                                text: 'Communal Service',
+                                                                callback_data: 'ComunalService'
+                                                            }, {
+                                                                text: 'Gas',
+                                                                callback_data: 'Gass'
                                                             }]
                                                         ]
-                                                    }})
+                                                }}).then((item)=>{
+                                                    bot.once('callback_query', (query)=>{
+                                                        request.get('http://makhmudjon.me/api/categories', {
+                                                            'auth': {
+                                                              'bearer': userAuthorized.token
+                                                            }
+                                                          }, (err, res, body)=> {
+                                                                const complaints = _.toArray(JSON.parse(body));
+                                                                const category = complaints.filter(c => c.name===query.data)[0];
+                                                                console.log(category);
+                                                                postComplaint.categoryId = category.id;
+                                                                
+                                                                const subCategories = _.toArray(category.subCategories);
+                                                                bot.deleteMessage(msg.chat.id, item.message_id);
+                                                                const subCategoryButtons = [];
+                                                                subCategories.forEach((element)=>{
+                                                                    subCategoryButtons.push({
+                                                                        text: element.name,
+                                                                        callback_data: element.name
+                                                                    });
+                                                                });
+
+                                                                bot.sendMessage(msg.chat.id, 
+                                                                    'Choose sub-category: ',
+                                                                    {reply_markup: {
+                                                                        inline_keyboard: [
+                                                                            subCategoryButtons
+                                                                        ]
+                                                                    }
+                                                                }).then((item)=>{
+                                                                    bot.once('callback_query', (query)=>{
+                                                                        console.log('subcategory query');
+                                                                        const subCategory = subCategories.filter(sc => sc.name===query.data)[0];
+                                                                        console.log(subCategory);
+                                                                        postComplaint.subCategoryId = subCategory.id;
+                                                                        
+                                                                        bot.deleteMessage(msg.chat.id, item.message_id);
+
+                                                                        bot.sendMessage(msg.chat.id, 
+                                                                            'Now send me your location: ', 
+                                                                            {reply_markup: {
+                                                                                force_reply: true
+                                                                            }
+                                                                        }).then((item)=>{
+                                                                            bot.onReplyToMessage(msg.chat.id, item.message_id, (msg)=>{
+                                                                                if(msg.location) {
+                                                                                    console.log(`Lat: ${msg.location.latitude}`);
+                                                                                    console.log(`Lon: ${msg.location.longitude}`);
+                                                                                    postComplaint.lat = msg.location.latitude;
+                                                                                    postComplaint.long = msg.location.longitude;
+
+                                                                                    console.log(postComplaint);
+                                                                                    bot.sendMessage(msg.chat.id, 
+                                                                                        'Complaint successfully delivered! ✅');
+                                                                                    var formData = {
+                                                                                        categoryId: postComplaint.categoryId,
+                                                                                        subCategoryId: postComplaint.subCategoryId,
+                                                                                        lat: postComplaint.lat,
+                                                                                        long: postComplaint.long,
+                                                                                        image: {
+                                                                                            value:  postComplaint.image,
+                                                                                            options: {
+                                                                                              filename: 'image.jpg',
+                                                                                              contentType: 'image/jpeg'
+                                                                                            }
+                                                                                          }
+                                                                                    }
+                                                                                    request.post({url:'http://makhmudjon.me/api/complains', formData: formData, 'auth': {
+                                                                                        'bearer': userAuthorized.token
+                                                                                      }}, 
+                                                                                                function optionalCallback(err, httpResponse, body) {
+                                                                                        if (err) {
+                                                                                          return console.error('upload failed:', err);
+                                                                                        }
+                                                                                        console.log('Upload successful!  Server responded with:', body);
+                                                                                      });
+                                                                                }
+                                                                            });
+                                                                        });
+                                                                    });
+                                                                });
+                                                        });        
+                                                    });
+
+                                                });
+                                                
+                                                
                                             });
                                         }
                                         
                                     })
                                 });
-                                
-                                // request.get('http://makhmudjon.me/api/categories', {
-                                //     'auth': {
-                                //       'bearer': userAuthorized.token
-                                //     }
-                                //   }, (err, res, body)=> {
-                                //       console.log(body);
-                                //       bot.sendMessage(msg.chat.id, JSON.stringify(body));
-                                // });    
-                                
                               })
                         });
                     });            
