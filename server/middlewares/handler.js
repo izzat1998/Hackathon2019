@@ -1,0 +1,1 @@
+export default (error, req, res, next) => res.status(420).json({ error: error.message });

@@ -1,0 +1,326 @@
+[
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 1,
+        "lat": 41.310618, 
+        "long": 69.251891,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 1,
+        "lat": 41.310688,
+        "long": 69.251831,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 1,
+        "lat": 41.310698,
+        "long": 69.251491,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 2,
+        "lat": 41.311618,
+        "long": 69.231891,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 2,
+        "lat": 41.310618,
+        "long": 69.251891,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 2,
+        "lat": 41.315618,
+        "long": 69.211891,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 3,
+        "lat": 41.320654, 
+        "long": 69.226357,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 3,
+        "lat": 41.62064, 
+        "long": 69.326657,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 1,
+        "subCategoryId": 3,
+        "lat": 41.32064, 
+        "long": 69.126657,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 4,
+        "lat": 41.320624, 
+        "long": 69.226557,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 4,
+        "lat": 41.327624, 
+        "long": 69.926557,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 4,
+        "lat": 41.3364, 
+        "long": 69.26657,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 5,
+        "lat": 41.32094, 
+        "long": 69.220657,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 5,
+        "lat": 41.320881, 
+        "long": 69.228782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 5,
+        "lat": 41.321881, 
+        "long":69.28782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 6,
+        "lat": 41.320891, 
+        "long": 69.228982,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 6,
+        "lat": 41.320881, 
+        "long": 69.22122,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 2,
+        "subCategoryId": 6,
+        "lat":41.340881, 
+        "long": 69.528782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 7,
+        "lat":41.34081, 
+        "long": 69.58782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 7,
+        "lat":41.50881, 
+        "long": 69.578782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 7,
+        "lat":41.340851, 
+        "long": 69.52873,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 8,
+        "lat":41.340851, 
+        "long": 69.52842,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 8,
+        "lat":41.340831, 
+        "long": 69.52874,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 8,
+        "lat":41.340885, 
+        "long": 69.528382,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 9,
+        "lat":41.340882, 
+        "long": 69.528482,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 9,
+        "lat":41.340881, 
+        "long": 69.528782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 3,
+        "subCategoryId": 9,
+        "lat":41.340881, 
+        "long": 69.528782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 10,
+        "lat":41.340821, 
+        "long": 69.52842,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 10,
+        "lat":41.340281, 
+        "long": 69.538782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 10,
+        "lat":41.340881, 
+        "long": 69.528782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 11,
+        "lat":41.340841, 
+        "long": 69.57782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 11,
+        "lat":41.340881, 
+        "long": 69.8782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 11,
+        "lat":41.340881, 
+        "long": 69.528782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 12,
+        "lat":41.340881, 
+        "long": 69.52842,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": -1
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 12,
+        "lat":41.340881, 
+        "long": 69.528482,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 0
+    },
+    {
+        "userId": 1,
+        "categoryId": 4,
+        "subCategoryId": 12,
+        "lat":41.940881, 
+        "long": 69.578782,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4g5Hg81wWRHAqNHpx_z_iCCltArg1xw2VLp45SnPe1OJfPo_dg&s",
+        "status": 1
+    }
+]

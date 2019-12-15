@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Roads",
+        "subCategories": [
+            {
+                "id": 1,
+                "name": "traffic light"
+            },
+            {
+                "id": 2,
+                "name": "traffic signgs"
+            },
+            {
+                "id": 3,
+                "name": "traffic marks"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Polution",
+        "subCategories": [
+            {
+                "id": 4,
+                "name": "Natural"
+            },
+            {
+                "id": 5,
+                "name": "Rubbish"
+            },
+            {
+                "id": 6,
+                "name": "Others"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "ComunalService",
+        "subCategories": [
+            {
+                "id": 7,
+                "name": "Electricity city"
+            },
+            {
+                "id": 8,
+                "name": "Water"
+            },
+            {
+                "id": 9,
+                "name": "Others"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Gass",
+        "subCategories": [
+            {
+                "id": 10,
+                "name": "breaking pipes"
+            },
+            {
+                "id": 11,
+                "name": "Gass suply"
+            },
+            {
+                "id": 12,
+                "name": "Others"
+            }
+        ]
+    }
+]
